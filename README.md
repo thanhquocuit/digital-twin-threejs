@@ -4,16 +4,16 @@
 - This is a simple digital twin of my company's workspace.
 - Live demo: https://thanhquocuit.github.io/digital-twin-threejs/
 
-# Frontend Tech Stack
-- ReactJS and ThreeJS
+## Tech stack
+- Frontend: ReactJS (player + editor)
+- Graphic engine: ThreeJS
+- Export data format: JSON
 
 ## What to demo
-
 - Dots are an example of sensor locations in the building.
 - Room polygons are an example of rooms with alert information.
 
 ## How to control
-
 - LEFT MOUSE to rotate.
 - RIGHT MOUSE to pan.
 - MOUSE WHEEL to zoom in/out.
