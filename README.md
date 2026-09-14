@@ -2,6 +2,9 @@
 # Digital Twin Demo
 
 This is a simple digital twin of my company's workspace
+![Ground floor](screenshots/1.png)
+![Second floor](screenshots/2.png)
+![Room indicator](screenshots/3.png)
 
 # Frontend Tech Stack
 - ReactJS and ThreeJS
