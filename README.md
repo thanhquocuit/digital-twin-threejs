@@ -1,10 +1,8 @@
 
 # Digital Twin Demo
 
-This is a simple digital twin of my company's workspace
-![Ground floor](screenshots/1.png)
-![Second floor](screenshots/2.png)
-![Room indicator](screenshots/3.png)
+- This is a simple digital twin of my company's workspace.
+- Live demo: https://thanhquocuit.github.io/digital-twin-threejs/
 
 # Frontend Tech Stack
 - ReactJS and ThreeJS
@@ -24,3 +22,8 @@ This is a simple digital twin of my company's workspace
 
 ## Web Editor
 - You can use our web editor to create new spaces (Sorry! The public editor is not yet available)
+
+## Screenshots
+![Ground floor](screenshots/1.png)
+![Second floor](screenshots/2.png)
+![Room indicator](screenshots/3.png)
