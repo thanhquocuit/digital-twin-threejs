@@ -5,8 +5,8 @@
 - Live demo: https://thanhquocuit.github.io/digital-twin-threejs/
 
 ## Tech stack
-- Frontend: ReactJS (player + editor)
-- Graphic engine: ThreeJS
+- Frontend: [ReactJS](https://react.dev/) (player + editor)
+- Graphic engine: [ThreeJS](https://threejs.org/)
 - Export data format: JSON
 
 ## What to demo
