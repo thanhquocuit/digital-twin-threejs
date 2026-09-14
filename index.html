@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="model_player.js"></script>
+  <script src="reliance_building.js"></script>
+  <title>Digital Twin Demo</title>
+</head>
+
+<body>
+  <div id="smplr-embed"
+    style="display: block; width: calc(100vh - 10px);height: calc(100vh - 10px); position: absolute; right: 10px;">
+  </div>
+  <div style="position: fixed; left: 10px; top: 0; width: calc(50vw - 100px);">
+    <h2>Digital Twin Demo</h2>
+    <p style="font-weight: bold;">What to demo</p>
+    <p> - Dots are example of sensor locations in the building. </p>
+    <p> - Room polygons are example of rooms with alert information. </p>
+    <p style="font-weight: bold;">How to use</p>
+    <p> - LEFT MOUSE to rotate. </p>
+    <p> - RIGHT MOUSE to pan. </p>
+    <p> - MOUSE WHEEL to zoom in/out. </p>
+    <p style="margin-top: 5px;">
+      - Click on the control buttons
+      <img
+        src="data:image/png;base64,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"
+        style="display: inline; width: 35px;" />
+      to navigate between floors
+    </p>
+    </p>
+    <p> - Click on the setting button <img
+        src="data:image/png;base64,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"
+        style="display: inline; width: 35px;" /> to toggle on/off features</p>
+  </div>
+
+  <script type="text/javascript">
+    // Reliance Office
+    let locId = '62e04285f7ef45e8a8df2f8843cb6a87'
+    let data = window.spaceName[locId]
+    let player = new ModelPlayer('smplr-embed');
+
+    // init the player
+    player.startPlayer(data, {
+      onReady: async () => {
+
+      },
+      onError: (message) => console.error("Could not start viewer", message),
+      onLevelChange: (levelIdx) => {
+
+      },
+      settings: {
+        wall: {
+          opacity: 0.6
+        },
+        polygon: {
+          color: 0xff4444
+        }
+      }
+    });
+
+    // display some polygons which are created using editor
+    // events hook
+    player.getDataLayer('polygons').setOptions({
+      onHoverIn: (data, canvasX, canvasY) => {
+        data.SetColor(0xff8888)
+
+      },
+      onHoverOut: (data) => {
+        data.SetColor(0xff4444)
+      }
+    });
+    for (const n of ['trevor', 'swatej', 'vamsi', 'vamsi', 'quoc']) {
+      const polygon = player.getDataLayer('polygons').getElementByName(n);
+      polygon.color = 0xff4444;
+      polygon.hidden = false;
+    }
+
+    // display some sensor location demo
+    let color = '0x4444ff'
+    let sensors = [
+      { color: '#0d6efd', x: 9, z: 5 },
+      { color: '#0d6efd', x: 9, z: 0 },
+      { color: '#22ff22', x: 9, z: -5 },
+      { color: '#ffc107', x: 9, z: -10 },
+    ].map(({ name, color, x, z }, idx) => ({
+      name: `Sensor ${idx + 1}`, color, elevation: 1.8, radius: 0.3, levelIndex: 0, x, z
+    }));
+
+    const ly = player.addDataLayer(
+      `sensors-${color}`, 'point', sensors, {
+      onClick: (evt) => {
+        alert(`PointLayer; onClick: ${evt.name}`)
+      },
+      onHoverIn: (data) => {
+        data.SetGlowEffect(true)
+        const { canvasX, canvasY } = ly.getElementPositionOnScreen(data.id)
+      },
+      onHoverOut: (data) => {
+        data.SetGlowEffect(false)
+      },
+      width: 0.1,
+      color,
+      diameter: 0.4,
+    });
+  </script>
+
+</html>
