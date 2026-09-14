@@ -24,6 +24,18 @@
 - You can use our web editor to create new spaces (Sorry! The public editor is not yet available)
 
 ## Screenshots
+
+- Ground floor
 ![Ground floor](screenshots/1.png)
+
+- Second floor
 ![Second floor](screenshots/2.png)
+
+- With room indicators
 ![Room indicator](screenshots/3.png)
+
+## Contact
+- Connect with me on https://www.linkedin.com/in/thanhquocuit/
+- Email: thanhquocuit@gmail.com
+
+## Thank you!
